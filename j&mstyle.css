@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'monospace;', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background: #0B6D8B;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    padding: 2px 4%;
+}
+
+nav{
+    display: flex;
+    align-items: center, uppermost;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+   transition: color 0.5s;
+}
+
+nav ul li a:hover {
+    color: #3E001F; 
+}
+
+.header-text{
+    margin-top: 9%;
+    font-size: 40px;
+    font-family: 'Times New Roman', sans-serif;
+}
+
+.header-text h1{
+    font-size: 15px;
+    margin-top: 9px;
+    font-family: 'Times New Roman', sans-serif;
+}
+.header-text p span{
+    color: #F5E8B7;
+    font-size: 60px;
+    font-family: 'Times New Roman', sans-serif;
+}
+
+/*-------------------Travel Tips---------------*/
+#traveltips{
+    padding: 80px ;
+    color: #FFF2D8;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.traveltips-col-1{
+    flex-basis: 35%;
+}
+.traveltips-col-1 img {
+    width: 100%; 
+    height: auto;
+    border-radius: 15px; 
+}
+.traveltips-col-2 {
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #E9B824;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #E9B824;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+/*-------------------Explore--------------*/
+
+#Explore{
+    padding: 50px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+/*-------------------Contacts--------------*/
+
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.social-icons a img {
+  width: 25px;
+  height: auto;
+  margin-right: 0px;
+  border-radius: 15px;
+  margin-top: 200px;
+}
+
+.contact-left p i {
+  color: #ff004f;
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+p img.fas.fa-paper-phone {
+  vertical-align: middle; 
+  margin-right: 5px; 
+  margin-top: -6px; 
+  border-radius: 15px;
+  width: 20px;
+  height: auto;
+}
+
+p img.fas.fa-paper-plane {
+  vertical-align: middle;
+  margin-top: -6px; 
+  width: 20px;
+  height: auto;
+  margin-right: 5px;
+  border-radius: 15px;
+}
+
+
+.social-icons {
+  margin-top: 30px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+  color: #ff004f;
+  transform: translateY(-5px);
+}
+
+.btn.btn2 {
+  background-color: #FFFFFF;
+  color: #272829;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn.btn2:hover {
+  background-color: #0077b6;
+}
+
+.contact-right {
+  width: 100%;
+  text-align: left; 
+}
+
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #FAF1E4;
+  padding: 15px; 
+  margin: 15px 0;
+  color: #4C3D3D;
+  font-size: 18px;
+  border-radius: 16px;
+}
+
+form .btn2{
+    padding: 14px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #44A1BD;
+    font-weight: 300;
+    margin-top: 20px;
+}
